@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="myQuiz.css">
+
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    }
+    body{
+    background: #064cbd;
+    }
+    .app{
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    }
+    .app h1{
+        font-size: 25px;
+        color: #001e4d;
+        border-bottom: 1px solid #333;
+        padding-bottom: 30px;
+        font-weight: 600;
+    }
+    .question{
+        padding: 20px 0;
+
+    }
+    .question h2{
+        font-size: 18px;
+        color: #001e4d;
+        font-weight: 600;
+    }
+    .btn{
+        background: white;
+        color: black;
+        font-weight: 600;
+        width: 100%;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px 0;
+        text-align: left;
+        border-radius: 4px;
+        cursor: pointer; 
+        transition: all 0.35s;
+    }
+    .btn:hover.btn:hover:not([disable]){
+        background: black;
+        color: white;
+    }
+    .btn:disabled{
+        cursor: no-drop;
+    }
+    #next-btn{
+        background: #064cbd;
+        color: white;
+        font-weight: 600;
+        padding: 10px;
+        margin: 20px auto 0;
+        width: 130px;
+        border-radius: 4px;
+        cursor: pointer;
+        display: none;
+    }
+    .correct{
+        background: #9aeabc;
+    }
+    .incorrect{
+        background: #ff9393;
+    }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <h1>Simple Quiz</h1>
+        <div class="quiz">
+            <h2 id="question">Question goes here</h2>
+            <div  id="answer-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+ <script src="quizassign.js"></script>   
+</body>
+</html>
